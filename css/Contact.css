@@ -1,0 +1,238 @@
+.center-part {
+    text-align: center;
+}
+
+.color-part {
+    background-image: url(../img/contact.jpg);
+    background-size: cover;
+    background-position: 100%;
+    background-repeat: no-repeat;
+    padding: 250px 0px;
+}
+
+@media screen and (max-width: 767px) {
+    .color-part {
+        background-position: 0%;
+        padding: 100px 0px;
+    }
+}
+
+.center-part h1 {
+    font-size: 46px;
+    position: relative;
+    color: #fff;
+}
+
+.Contact-box-part {
+    box-shadow: 0px 0px 52px -36px;
+    width: 27%;
+    text-align: center;
+    padding: 14px;
+    border-radius: 15px;
+}
+
+.Contact-box-part h2 {
+    font-size: 20px;
+    color: #3a3a3c;
+    padding: 15px;
+}
+
+.box-flex-part {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 65px;
+}
+
+i.fas.fa-mobile-alt {
+    color: #ec3f8d;
+    font-size: 25px;
+}
+
+i.fas.fa-home {
+    color: #ec3f8d;
+    font-size: 25px;
+}
+
+i.fas.fa-address-book {
+    color: #ec3f8d;
+    font-size: 25px;
+}
+
+@media screen and (max-width: 767px) {
+    .box-flex-part {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Contact-box-part {
+        width: 95%;
+        padding: 14px;
+        margin-top: 20px;
+    }
+
+    .Contact-three-box-flex-part {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+}
+
+.Contact-box-part-second {
+    box-shadow: 0px 0px 10px -7px;
+    width: 68%;
+    margin-left: -26px;
+    padding: 50px 0px;
+    border-radius: 10px;
+}
+
+.Contact-box-part-second h1 {
+    padding-left: 47px;
+}
+
+.Contact-three-box-flex-part {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0px;
+    width: 100%;
+}
+
+.Contact-three-title-part p {
+    width: 121px;
+    line-height: 1.7;
+    padding-top: 20px;
+    font-size: 18px;
+    color: #3a3a3c;
+}
+
+.icon-part {
+    margin: 17px 5px 14px 0px;
+}
+
+i.fab.fa-linkedin {
+    font-size: 18px;
+    margin-right: 15px;
+}
+
+i.fab.fa-instagram {
+    font-size: 18px;
+    margin-right: 15px;
+}
+
+i.fas.fa-basketball-ball {
+    font-size: 18px;
+    margin-right: 15px;
+}
+
+i.fab.fa-behance {
+    font-size: 18px;
+    margin-right: 15px;
+}
+
+.Contact-box-part-second p {
+    font-size: 18px;
+    color: #3a3a3c;
+    padding: 18px 51px;
+}
+
+i.fab.fa-linkedin:hover {
+    color: #e05393;
+}
+
+i.fab.fa-instagram:hover {
+    color: #e05393;
+}
+
+i.fas.fa-basketball-ball:hover {
+    color: #e05393;
+}
+
+i.fab.fa-behance :hover {
+    color: #e05393;
+}
+
+@media screen and (max-width: 767px) {
+    .Contact-box-part-second {
+        box-shadow: 0px 0px 10px -7px;
+        width: 98%;
+        margin-left: 0px;
+        border-radius: 10px;
+        height: 500px;
+    }
+
+    .Contact-three-title-part {
+        width: 100%;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .Contact-three-title-part p {
+        width: 100%;
+        line-height: 1.7;
+        padding-top: 20px;
+        font-size: 18px;
+        color: #3a3a3c;
+    }
+
+    .Contact-box-part-second p {
+        font-size: 18px;
+        color: #3a3a3c;
+        padding: 18px 20px;
+    }
+}
+
+input.input {
+    width: 67%;
+    height: 37px;
+    margin: 22px 0px -12px 47px;
+    background-color: #fafafa;
+    padding: 4px 0px 5px 10px;
+    font-size: 15px;
+    border: 1px solid;
+    /* / border: none;/ */
+}
+
+textarea.text {
+    width: 62%;
+    margin: 22px 0px -12px 47px;
+    height: 88px;
+    padding: 23px;
+    background-color: #fafafa;
+}
+
+.Contact-box-part-second button {
+    margin-left: 46px;
+    background: #3a3a3c;
+    padding: 11px 28px;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 767px) {
+    input.input {
+        width: 85%;
+        height: 37px;
+        margin: 22px 0px -12px 20px;
+    }
+
+    .Contact-box-part-second button {
+        margin-left: 20px;
+    }
+
+    .Contact-box-part-second h1 {
+        padding: 8px 0px 0px 7px;
+        text-align: center;
+    }
+
+    textarea.text {
+        width: 78%;
+        margin: 22px 0px -12px 20px;
+        height: 120px;
+    }
+
+    .center-part h1 {
+        font-size: 46px;
+        position: relative;
+        color: #fff;
+    }
+}

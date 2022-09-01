@@ -1,0 +1,85 @@
+.Trems-color-part {
+    background-color: #cfa97f;
+    padding: 76px 74px;
+    margin: 60px 0px;
+    border-radius: 20px;
+}
+
+.Terms-part {
+    background: #ffff;
+    padding: 26px 60px;
+    border-radius: 48px;
+}
+
+.Trems-first-title-part p {
+    line-height: 1.7;
+    padding: 12px 2px;
+}
+
+.Trems-first-title-part h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.Trems-first-title-part h4 {
+    color: #AFB0BA;
+}
+
+button.Terms {
+    background: #fff;
+    color: black;
+    border: 1px solid;
+}
+
+button.Term {
+    background: #cfa97f;
+    font-size: 15px;
+    color: #3a3a3c;
+}
+
+@media screen and (max-width: 767px) {
+    .Trems-color-part {
+        padding: 20px 24px;
+        margin-top: 30px;
+        border-radius: 20px;
+    }
+
+    .Terms-part {
+        background: #ffff;
+        padding: 98px 0px;
+        border-radius: 48px;
+    }
+
+    .Trems-first-title-part p {
+        line-height: 1.7;
+        padding: 12px 10px;
+    }
+
+    .Trems-first-title-part h1 {
+        font-size: 25px;
+        font-weight: bold;
+        padding-left: 10px;
+    }
+
+    .Trems-first-title-part h4 {
+        color: #AFB0BA;
+        padding-left: 10px;
+    }
+
+    button.Terms {
+        background: #fff;
+        color: black;
+        border: 1px solid;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    button.Term {
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    .Terms-button-part {
+        padding-left: 30px;
+    }
+}

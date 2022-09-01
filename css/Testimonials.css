@@ -1,0 +1,156 @@
+.Reviews-first-part {
+    background: url(../img/reviews.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 250px 0px;
+    background-position: 100%;
+}
+
+.Reviews-part {
+    text-align: center;
+}
+
+.Reviews-part h1 {
+    font-size: 50px;
+    color: #3a3a3c;
+    font-weight: bold;
+}
+
+.Reviews-second-part {
+    background-color: #DCE0E8;
+    margin: 60px 0px;
+    border-radius: 20px;
+    padding: 50px;
+}
+
+@media screen and (max-width: 767px) {
+    .Reviews-second-part {
+        padding: 20px;
+    }
+}
+
+.Reviews-img-part img {
+    width: 18%;
+}
+
+.Reviews-img-part {
+    display: flex;
+}
+
+.Reviews-box-part {
+    background: #fff;
+    width: 30%;
+    padding: 10px;
+    margin: 10px 0px;
+    border-radius: 8px;
+}
+
+.Reviews {
+    padding: 4px 11px;
+}
+
+.Reviews-icon-part {
+    padding: 9px 8px;
+}
+
+.Reviews-icon-part a {
+    color: #ffa500;
+    border: none !important;
+}
+
+.Reviews h4 {
+    font-weight: 700;
+}
+
+.Reviews-title-part h4 {
+    font-weight: 700;
+}
+
+.Reviews-title-part p {
+    color: #3a3a3c;
+    font-size: 16px;
+}
+
+.Reviews-flex-part {
+    display: flex;
+    padding-top: 30px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 767px) {
+    .Reviews-flex-part {
+        padding-top: 5px;
+    }
+}
+
+.Reviews-button-part {
+    text-align: center;
+    padding-top: 40px;
+}
+
+.Reviews-button-part button {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 767px) {
+    .Reviews-first-part {
+        background-position: 0%;
+        padding: 100px 0px;
+    }
+
+    .Reviews-part {
+        text-align: center;
+    }
+
+    .Reviews-second-part h2 {
+        text-align: center;
+    }
+
+    .Reviews-img-part img {
+        width: 18%;
+    }
+
+    .Reviews-img-part {
+        display: flex;
+    }
+
+    .Reviews-box-part {
+        width: 100%;
+    }
+
+    .Reviews {
+        padding: 4px 11px;
+    }
+
+    .Reviews-icon-part {
+        padding: 9px 8px;
+    }
+
+    .Reviews-icon-part a {
+        color: #ffa500;
+    }
+
+    .Reviews h4 {
+        font-weight: 700;
+    }
+
+    .Reviews-title-part h4 {
+        font-weight: 700;
+    }
+
+    .Reviews-title-part p {
+        color: #3a3a3c;
+        font-size: 16px;
+    }
+
+    /* .Reviews-flex-part {
+        padding-top: 29px;
+        flex-direction: column;
+    } */
+    .Reviews-button-part {
+        text-align: center;
+        padding: 20px 0px;
+    }
+}

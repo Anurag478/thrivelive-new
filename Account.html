@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gift Shop - Homepage</title>
+    <link rel="icon" type="image/x-icon" href="/img/fevicon.png">
+    <!-- css -->
+    <link rel="stylesheet" href="css/Homepage.css">
+    <link rel="stylesheet" href="css/Account.css">
+    <!-- css end-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+</head>
+
+<body>
+    <!-- header start -->
+    <div id="header"></div>
+    <!-- header end -->
+    <div class="container">
+        <div class="section setting js-tabs">
+            <div class="setting__center center">
+                <div class="setting__menu"><a class="setting__link js-tabs-link active" href="#">
+                        <div class="icon icon-user">
+                            <i class="fa fa-user"></i>
+                        </div>Personal info
+                    </a><a class="setting__link js-tabs-link" href="#">
+                        <div class="icon icon-lock">
+                            <i class="fa fa-lock"></i>
+                        </div>Login and security
+                    </a><a class="setting__link js-tabs-link" href="#">
+                        <div class="icon icon-credit-card">
+                            <i class="fa fa-shopping-cart"></i>
+                        </div>Orders
+                    </a><a class="setting__link js-tabs-link" href="#">
+                        <div class="icon icon-bell">
+                            <i class="fa fa-bell"></i>
+                        </div>Notification
+                    </a></div>
+                <div class="setting__container">
+                    <div class="setting__item js-tabs-item">
+                        <form class="setting__form">
+                            <div class="setting__head">
+                                <h2 class="setting__title h2">Personal info</h2>
+                                <!-- <a class="button-stroke button-small setting__button" href="profile.html">View
+                                    profile</a> -->
+                            </div>
+                            <div class="setting__list">
+                                <div class="setting__section">
+                                    <div class="setting__category">Account info</div>
+                                    <div class="setting__fieldset">
+                                        <div class="setting__row">
+                                            <div class="field">
+                                                <div class="field__label">Display Name</div>
+                                                <div class="field__wrap">
+                                                    <input class="field__input" type="text" name="display-name"
+                                                        placeholder="Enter your display name" required>
+                                                </div>
+                                            </div>
+                                            <div class="field">
+                                                <div class="field__label">real name</div>
+                                                <div class="field__wrap">
+                                                    <input class="field__input" type="text" name="real-name"
+                                                        placeholder="Enter your real name" required>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="setting__row">
+                                            <div class="field">
+                                                <div class="field__label">Phone</div>
+                                                <div class="field__wrap">
+                                                    <input class="field__input" type="tel" name="phone"
+                                                        placeholder="Phone number" required>
+                                                </div>
+                                            </div>
+                                            <div class="field">
+                                                <div class="field__label">email</div>
+                                                <div class="field__wrap">
+                                                    <input class="field__input" type="email" name="email"
+                                                        placeholder="Email" required>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <div class="field__label">bio</div>
+                                            <div class="field__wrap">
+                                                <textarea class="field__textarea" name="bio"
+                                                    placeholder="About yourself in a few words" required></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="setting__row">
+                                            <div class="field">
+                                                <div class="field__label">lives in</div>
+                                                <div class="field__wrap">
+                                                    <select class="select">
+                                                        <option>Location</option>
+                                                        <option>USA</option>
+                                                        <option>Russia</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="field">
+                                                <div class="field__label">Speak</div>
+                                                <div class="field__wrap">
+                                                    <select class="select">
+                                                        <option>English (United States)</option>
+                                                        <option>Russian</option>
+                                                        <option>Chinese</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="setting__controls">
+                                <button class="button setting__button">Update profile</button>
+                                <button class="setting__clear">
+                                    <div class="icon icon-close">
+                                        <i class="fa fa-close"></i>
+                                    </div>Clear all
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="setting__item js-tabs-item">
+                        <h2 class="setting__title h2">Login and security</h2>
+                        <div class="setting__list">
+                            <div class="setting__box">
+                                <div class="setting__stage">Login</div>
+                                <div class="setting__element" id="top_elements">
+                                    <div class="setting__details">
+                                        <div class="setting__label">Password</div>
+                                        <div class="setting__text">Last updated 1 month ago</div>
+                                    </div>
+                                    <div class="field" style="margin: 20px 0px; width: 100%">
+                                        <div class="field__wrap"><input class="field__input" type="password"
+                                                name="Old Password" placeholder="Old Password" required="" value="">
+                                        </div>
+                                    </div>
+                                    <div class="field" style="margin-bottom: 20px; width: 100%">
+                                        <div class="field__wrap"><input class="field__input" type="password"
+                                                name="New Password" placeholder="New Password" required="" value="">
+                                        </div>
+                                    </div>
+                                    <div class="field" style="margin-bottom: 20px; width: 100%">
+                                        <div class="field__wrap"><input class="field__input" type="password"
+                                                name="Confirm Password" placeholder="Confirm Password" required=""
+                                                value=""></div>
+                                    </div><button class="button-stroke button-small settings__button">Update
+                                        password</button>
+                                </div>
+                            </div>
+                            <div class="setting__box">
+                                <div class="setting__stage">Device history</div>
+                                <div class="setting__group">
+                                    <div class="setting__element">
+                                        <div class="setting__details">
+                                            <div class="setting__label">Session</div>
+                                            <div class="setting__text">May 14, 2021 at 08:36pm</div>
+                                        </div>
+                                        <button class="button-stroke button-small settings__button">Log out
+                                            device</button>
+                                    </div>
+                                    <div class="setting__element">
+                                        <div class="setting__details">
+                                            <div class="setting__label">macOs Big Sur. Chrome</div>
+                                            <div class="setting__text">May 14, 2021 at 08:36pm</div>
+                                        </div>
+                                        <button class="button-stroke button-small settings__button">Log out
+                                            device</button>
+                                    </div>
+                                    <div class="setting__element">
+                                        <div class="setting__details">
+                                            <div class="setting__label">Session</div>
+                                            <div class="setting__text">May 14, 2021 at 08:36pm</div>
+                                        </div>
+                                        <button class="button-stroke button-small settings__button">Log out
+                                            device</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="setting__item js-tabs-item">
+                        <h2 class="setting__title h2">Orders</h2>
+                        <form class="setting__form">
+                            <div class="setting__list">
+                                <div class="setting__box">
+                                    <div class="tble_content">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>Sr.No.</th>
+                                                    <th>User Name</th>
+                                                    <th>Order Type</th>
+                                                    <th>Order No.</th>
+                                                    <th>Mobile No</th>
+                                                    <th>Date</th>
+                                                    <th>Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">1</th>
+                                                    <td>Abhi</td>
+                                                    <td>Canvas</td>
+                                                    <td>8</td>
+                                                    <td>9647451445</td>
+                                                    <td>21-07-2022</td>
+                                                    <td>Pending</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2</th>
+                                                    <td>Bred</td>
+                                                    <td>Mug</td>
+                                                    <td>15</td>
+                                                    <td>9647451445</td>
+                                                    <td>21-07-2022</td>
+                                                    <td>Approved</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">3</th>
+                                                    <td>Michel</td>
+                                                    <td>Calender</td>
+                                                    <td>12</td>
+                                                    <td>9647451445</td>
+                                                    <td>21-07-2022</td>
+                                                    <td>Approved</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">4</th>
+                                                    <td>Tom</td>
+                                                    <td>Framed Photo</td>
+                                                    <td>13</td>
+                                                    <td>9647451445</td>
+                                                    <td>21-07-2022</td>
+                                                    <td>Pending</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">5</th>
+                                                    <td>Aliza</td>
+                                                    <td>Mugs</td>
+                                                    <td>10</td>
+                                                    <td>9647451445</td>
+                                                    <td>21-07-2022</td>
+                                                    <td>Approved</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="setting__item js-tabs-item">
+                        <h2 class="setting__title h2">Notification setting</h2>
+                        <div class="setting__list">
+                            <div class="setting__box">
+                                <div class="setting__stage">Messages</div>
+                                <div class="setting__notification">
+                                    <div class="setting__main">
+                                        <div class="setting__subtitle">Email</div>
+                                        <label class="switch">
+                                            <input class="switch__input" type="checkbox" checked="checked" /><span
+                                                class="switch__inner"><span class="switch__box"></span></span>
+                                        </label>
+                                    </div>
+                                    <div class="setting__content">Recevice notifications via email</div>
+                                </div>
+                                <div class="setting__notification">
+                                    <div class="setting__main">
+                                        <div class="setting__subtitle">Text messages</div>
+                                        <label class="switch">
+                                            <input class="switch__input" type="checkbox" /><span
+                                                class="switch__inner"><span class="switch__box"></span></span>
+                                        </label>
+                                    </div>
+                                    <div class="setting__content">Recevice notifications via mobile phone</div>
+                                </div>
+                                <div class="setting__notification">
+                                    <div class="setting__main">
+                                        <div class="setting__subtitle">Browser notifications</div>
+                                        <label class="switch">
+                                            <input class="switch__input" type="checkbox" /><span
+                                                class="switch__inner"><span class="switch__box"></span></span>
+                                        </label>
+                                    </div>
+                                    <div class="setting__content">Recevice notifications of your browser</div>
+                                </div>
+                            </div>
+                            <div class="setting__box">
+                                <div class="setting__stage">Promotions</div>
+                                <div class="setting__notification">
+                                    <div class="setting__main">
+                                        <div class="setting__subtitle">Email</div>
+                                        <label class="switch">
+                                            <input class="switch__input" type="checkbox" checked="checked" /><span
+                                                class="switch__inner"><span class="switch__box"></span></span>
+                                        </label>
+                                    </div>
+                                    <div class="setting__content">Recevice notifications via email</div>
+                                </div>
+                                <div class="setting__notification">
+                                    <div class="setting__main">
+                                        <div class="setting__subtitle">Text messages</div>
+                                        <label class="switch">
+                                            <input class="switch__input" type="checkbox" /><span
+                                                class="switch__inner"><span class="switch__box"></span></span>
+                                        </label>
+                                    </div>
+                                    <div class="setting__content">Recevice notifications via mobile phone</div>
+                                </div>
+                                <div class="setting__notification">
+                                    <div class="setting__main">
+                                        <div class="setting__subtitle">Browser notifications</div>
+                                        <label class="switch">
+                                            <input class="switch__input" type="checkbox" /><span
+                                                class="switch__inner"><span class="switch__box"></span></span>
+                                        </label>
+                                    </div>
+                                    <div class="setting__content">Recevice notifications of your browser</div>
+                                </div>
+                            </div>
+                            <div class="setting__box">
+                                <div class="setting__stage">Reminders</div>
+                                <div class="setting__notification">
+                                    <div class="setting__main">
+                                        <div class="setting__subtitle">Email</div>
+                                        <label class="switch">
+                                            <input class="switch__input" type="checkbox" checked="checked" /><span
+                                                class="switch__inner"><span class="switch__box"></span></span>
+                                        </label>
+                                    </div>
+                                    <div class="setting__content">Recevice notifications via email</div>
+                                </div>
+                                <div class="setting__notification">
+                                    <div class="setting__main">
+                                        <div class="setting__subtitle">Text messages</div>
+                                        <label class="switch">
+                                            <input class="switch__input" type="checkbox" /><span
+                                                class="switch__inner"><span class="switch__box"></span></span>
+                                        </label>
+                                    </div>
+                                    <div class="setting__content">Recevice notifications via mobile phone</div>
+                                </div>
+                                <div class="setting__notification">
+                                    <div class="setting__main">
+                                        <div class="setting__subtitle">Browser notifications</div>
+                                        <label class="switch">
+                                            <input class="switch__input" type="checkbox" /><span
+                                                class="switch__inner"><span class="switch__box"></span></span>
+                                        </label>
+                                    </div>
+                                    <div class="setting__content">Recevice notifications of your browser</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer start -->
+    <div id="footer"></div>
+    <!-- footer end -->
+
+
+    <!-- *************** -->
+    <script src="js/lib/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+    <!-- ************** -->
+</body>
+
+</html>

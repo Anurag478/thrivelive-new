@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gift Shop - Homepage</title>
+    <link rel="icon" type="image/x-icon" href="/img/fevicon.png">
+    <!-- css -->
+    <link rel="stylesheet" href="css/Homepage.css">
+    <!-- css end-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+        $(function () {
+           $("#header").load("header.html");
+           $("#footer").load("footer.html");
+        });
+        
+    </script>
+    
+</head>
+
+<body>
+
+    <div id="header"></div>
+    <!-- top crousel -->
+    <div class="crousel_cover">
+        <div class="arrow arrow-left"><i class="fas fa-chevron-circle-left" style="font-size: 40px;"></i></div>
+        <img src="./img/Homepage-slider.jpg" alt="">
+        <img src="./img/home1.jpg" alt="">
+        <img src="./img/home2.jpg" alt="">
+        <div class="arrow arrow-right"><i class="fas fa-chevron-circle-right" style="font-size: 40px;"></i>
+        </div>
+        <div class=" dots">
+            <div class="dot">
+                <i class="far fa-dot-circle"></i>
+            </div>
+            <div class="dot">
+                <i class="far fa-circle"></i>
+            </div>
+            <div class="dot">
+                <i class="far fa-circle"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- middle section section -->
+    <section class="home_middle">
+        <div class="container">
+            <h4 style="color: #fff;">Service</h4>
+            <h1 style="color: #fff;">5 Years Of Service</h1>
+            <h5 style="color: #fff;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                incididunt ut labore
+                et<br>
+                dolore magna aliqua.</h5>
+            <p style="color: #fff;">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                consequuntur magni
+                dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia
+                dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore.
+            </p>
+            <button>MORE ABOUT US</button>
+        </div>
+    </section>
+    <!-- middle section section end-->
+
+    <!--product box section -->
+    <div class="container">
+        <div class="product_part_content">
+            <h1>Products</h1>
+            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut o velit, sed quia non numquam eius modi
+                tempora incidunt ut labore.
+            </p>
+        </div>
+        <section class="products_cover">
+            <div class="main_product">
+                <img src="img/p3.jpg">
+                <button>SHOP NOW</button>
+                <p>Comfort & Care BundleRegular price</p>
+            </div>
+            <div class="main_product">
+                <img src="img/product1.webp">
+                <button>SHOP NOW</button>
+                <p>Comfort & Care BundleRegular price</p>
+            </div>
+            <div class="main_product">
+                <img src="img/p3.jpg">
+                <button>SHOP NOW</button>
+                <p>Comfort & Care BundleRegular price</p>
+            </div>
+            <div class="main_product">
+                <img src="img/product1.webp">
+                <button>SHOP NOW</button>
+                <p>Comfort & Care BundleRegular price</p>
+            </div>
+            <div class="main_product">
+                <img src="img/p3.jpg">
+                <button>SHOP NOW</button>
+                <p>Comfort & Care BundleRegular price</p>
+            </div>
+            <div class="main_product">
+                <img src="img/product1.webp">
+                <button>SHOP NOW</button>
+                <p>Comfort & Care BundleRegular price</p>
+            </div>
+        </section>
+    </div>
+    <!--product box section end-->
+
+    <!-- last sec -->
+    <section class="homepage_last_sec">
+        <div class="container">
+            <div class="homepage_last_sec_sides">
+                <div class="last_sec_sides_both">
+                    <img src="./img/book.png">
+                </div>
+                <div class="last_sec_sides_both">
+                    <h2>Premium Services</h2>
+                    <p class="pehra">We’re excited to introduce savings to you in a whole new way this year with volume
+                        discounts.
+                        This meaningful offer is available on select styles as featured in our Gift Guide.</p>
+                    <p>10 or more of one gift and receive 10% off</p>
+                    <p>25 or more of one gift and receive 15% off</p>
+                    <p>40 or more of one gift and receive 10% off</p>
+
+                    <button>GET GIFT GUIDE</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- last sec end-->
+
+    <!-- footer start -->
+    <div id="footer"></div>
+    <!-- footer end -->
+    <script>
+        const imgs = document.querySelectorAll(".crousel_cover img");
+        const dots = document.querySelectorAll(".dot i");
+        const leftArrow = document.querySelector(".arrow-left");
+        const rightArrow = document.querySelector(".arrow-right");
+
+        let currentIndex = 0;
+        let time = 5000; // default time for auto slideshow
+
+        const defClass = (startPos, index) => {
+            for (let i = startPos; i < imgs.length; i++) {
+                imgs[i].style.display = "none";
+                dots[i].classList.remove("fa-dot-circle");
+                dots[i].classList.add("fa-circle");
+            }
+            imgs[index].style.display = "block";
+            dots[index].classList.add("fa-dot-circle");
+        };
+
+        defClass(1, 0);
+
+        leftArrow.addEventListener("click", function () {
+            currentIndex <= 0 ? currentIndex = imgs.length - 1 : currentIndex--;
+            defClass(0, currentIndex);
+        });
+
+        rightArrow.addEventListener("click", function () {
+            currentIndex >= imgs.length - 1 ? currentIndex = 0 : currentIndex++;
+            defClass(0, currentIndex);
+        });
+
+        const startAutoSlide = () => {
+            setInterval(() => {
+                currentIndex >= imgs.length - 1 ? currentIndex = 0 : currentIndex++;
+                defClass(0, currentIndex);
+            }, time);
+        };
+        startAutoSlide();
+    </script>
+</body>
+
+</html>

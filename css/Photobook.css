@@ -1,0 +1,263 @@
+section.photobook_slider {
+    background: url(../img/Photobook.png);
+    background-size: cover;
+    background-position: 100%;
+    background-repeat: no-repeat;
+    padding: 160px 0px;
+}
+
+@media screen and (max-width: 767px) {
+    section.photobook_slider {
+        background-position: center;
+        padding: 60px 10px;
+    }
+
+}
+
+.PhotoBook_content {
+    width: 50%;
+}
+
+@media screen and (max-width: 767px) {
+    .PhotoBook_content {
+        width: 100%;
+    }
+}
+
+.PhotoBook_content h2 {
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 48px;
+    letter-spacing: -0.888889px;
+    padding-bottom: 20px;
+}
+
+.PhotoBook_content p {
+    padding: 20px 0px;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.PhotoBook_content button {
+    font-size: 18px;
+}
+
+.Mainbox_area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.boxdiv {
+    width: 29%;
+    margin-bottom: 40px;
+    padding: 11px 15px 24px;
+    overflow: hidden;
+    transition: all 0.5s linear 0s;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+.boxdiv img {
+    width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+    .boxdiv {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.boxdiv p {
+    padding-bottom: 16px;
+}
+
+.boxdiv a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.Explore_btn {
+    width: 100%;
+    text-align: center;
+    margin: 15px 0px;
+}
+
+section.choosearea {
+    background: #F9F9F9;
+    padding: 60px;
+}
+
+.chooseareaheading {
+    text-align: center;
+}
+
+.chooseboxmain_area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.choosebox {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 10px 10px;
+}
+
+@media screen and (max-width: 767px) {
+    .choosebox {
+        width: 100%;
+    }
+}
+
+.choosebox p {
+    padding-bottom: 10px;
+}
+
+.choosebox button {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.choosebox button i.fa.fa-angle-right {
+    margin-left: 16px;
+}
+
+.choosebox img {
+    width: 100%;
+}
+
+.main_bookcover {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+    .main_bookcover {
+        display: block;
+    }
+}
+
+.left_img img {
+    width: 100%;
+}
+
+section.BookCover {
+    padding: 60px 0px;
+}
+
+.left_img {
+    width: 50%;
+}
+
+@media screen and (max-width: 767px) {
+    .left_img {
+        width: 100%;
+    }
+
+    .right_content br {
+        display: none;
+    }
+}
+
+section.smart_book {
+    background: url(/img/Make2x.png);
+    background-size: cover;
+    background-position: 100%;
+    background-repeat: no-repeat;
+    padding: 50px 0px;
+}
+
+@media screen and (max-width: 767px) {
+    section.smart_book {
+        background-position: center;
+    }
+}
+
+.smartbook_content {
+    width: 500px;
+}
+
+@media screen and (max-width: 767px) {
+    .smartbook_content {
+        width: 100%;
+    }
+}
+
+.smartbook_content h2 {
+    font-weight: 900;
+    font-size: 40px;
+}
+
+.smartbook_content p {
+    padding-bottom: 30px;
+}
+
+section.magic_area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 0px;
+}
+
+@media screen and (max-width: 767px) {
+    section.magic_area {
+        display: block;
+    }
+}
+
+.magic_content {
+    width: 50%;
+}
+
+@media screen and (max-width: 767px) {
+    .magic_content {
+        width: 100%;
+    }
+}
+
+.magicmain_img {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 53.5%;
+    margin-right: 7%;
+}
+
+@media screen and (max-width: 767px) {
+    .magicmain_img {
+        width: 100%;
+        /* / margin-right: 7%; / */
+    }
+
+    .img_1 img {
+        width: 100%;
+    }
+
+    .img_2 {
+        width: 50%;
+    }
+
+    .img_2 img {
+        width: 100%;
+        object-fit: cover;
+        height: 200px;
+    }
+
+    .img_3 {
+        width: 50%;
+    }
+
+    .img_3 img {
+        width: 100%;
+        height: 200px;
+    }
+
+}

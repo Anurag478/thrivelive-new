@@ -1,0 +1,231 @@
+.services_top_slider {
+    background-image: url(../img/s1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 60px 0px;
+}
+
+@media only screen and (max-width: 767px) {
+    .services_top_slider {
+        padding: 30px 0px;
+    }
+}
+
+.services_top_slider_heading {
+    text-align: center;
+}
+
+.services_top_slider_heading h1 {
+    color: #fff;
+    font-size: 80px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+@media only screen and (max-width: 767px) {
+    .services_top_slider_heading h1 {
+        font-size: 30px;
+    }
+}
+
+.services_top_slider_heading button {
+    color: #3a3a3c;
+    background-color: #fff;
+    font-size: 18px;
+    padding: 10px 35px;
+}
+
+@media only screen and (max-width: 767px) {
+    .services_top_slider_heading button {
+        padding: 6px 10px;
+        font-size: 16px;
+        margin-top: 10px;
+    }
+}
+
+.services_top_slider_heading button:hover {
+    color: #fff;
+    background-color: #3a3a3c;
+}
+
+.services_top_slider_middle {
+    padding-top: 50px;
+    width: 40%;
+}
+
+@media only screen and (max-width: 767px) {
+    .services_top_slider_middle {
+        padding-top: 30px;
+        width: 70%;
+    }
+}
+
+.services_top_slider_middle h2 {
+    color: #fff;
+    font-size: 35px;
+}
+
+@media only screen and (max-width: 767px) {
+    .services_top_slider_middle h2 {
+        font-size: 25px;
+    }
+}
+
+.services_top_slider_middle p {
+    color: #fff;
+    padding: 10px 0px;
+    text-align: justify;
+}
+
+@media only screen and (max-width: 767px) {
+    .services_top_slider_middle p {
+        text-align: left;
+    }
+}
+
+.services_top_slider_middle h4 {
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.services_top_slider_middle h4::after {
+    content: '';
+    background-color: #fff;
+    height: 1px;
+    width: 50px;
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+}
+
+.services_top_slider_outerend {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.services_top_slider_end {
+    width: 40%;
+}
+
+@media only screen and (max-width: 767px) {
+    .services_top_slider_end {
+        width: 70%;
+    }
+}
+
+.services_top_slider_end h1 {
+    color: #fff;
+    font-size: 80px;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 767px) {
+    .services_top_slider_end h1 {
+        font-size: 50px;
+    }
+}
+
+.services_top_slider_end h4 {
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.services_top_slider_end h4::after {
+    content: '';
+    background-color: #fff;
+    height: 1px;
+    width: 50px;
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+}
+
+.services_top_slider_end p {
+    text-align: justify;
+    color: #fff;
+}
+
+@media only screen and (max-width: 767px) {
+    .services_top_slider_end p {
+        text-align: left;
+    }
+}
+
+/* next */
+.service_boxes_cover {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+@media only screen and (max-width: 767px) {
+    .service_boxes_cover {
+        flex-direction: column;
+        padding: 0px 20px;
+    }
+}
+
+.service_boxes_cover_content {
+    text-align: center;
+    padding-top: 80px;
+}
+
+@media only screen and (max-width: 767px) {
+    .service_boxes_cover_content {
+        padding-top: 60px;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+}
+
+.service_boxes_cover_content h1 {
+    font-weight: bold;
+}
+
+.service_boxes_cover_content p {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.service_boxes_cover_items {
+    width: 16%;
+    transition: 0.6s;
+    margin-top: 50px;
+}
+
+@media only screen and (max-width: 767px) {
+    .service_boxes_cover_items {
+        width: 100%;
+        margin-top: 30px;
+    }
+}
+
+.service_boxes_cover_items:hover {
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    transform: translateY(-5px);
+}
+
+.service_boxes_cover_items button {
+    width: 100%;
+}
+
+.service_boxes_cover_items img {
+    width: 100%;
+    object-fit: cover;
+    height: 300px;
+}
+
+#for_service_footer {
+    margin-top: 50px;
+}
+
+#services_last_sec {
+    background-color: #fff;
+}
